@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create new account</title>
+    <link rel="stylesheet" href="stylesheets/regstyle.css">
+    <link rel = "icon" href="img/favicon.png">
+</head>
+<body>
+<div id="regdiv">
+    <h1>Register Here</h1>
+    <form method="POST" action="" style="text-align: center">
+        <input type="text" id = "user" name="user" placeholder="Create New Username *" required><br/>
+        <input type="password" id="pass" name="pass" placeholder="Create Password *" required><br/>
+        <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit Phone No. *" required><br/>
+
+        <div class="profile-pic">
+            <label>Choose profile photo</label>
+            <input type="file" name="profile-img" >
+            <img src="img/avatar.jpg" id="profile" width="160" height="160" >
+        </div>
+
+        <span><?php echo $errmsg ?></span><br/>
+        <input type="submit" name="signup" value="Sign Up">
+
+    </form>
+</div>
+<?php
+    include_once("footer.php");
+?>
+</body>
+</html>

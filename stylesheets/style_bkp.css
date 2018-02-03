@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body{
+    background: url("../img/back.jpg") no-repeat;
+    background-size: cover;
+    overflow: auto;
+    height: 100%;
+}
+
+
+.info{
+    width: 100%;
+    min-height: 100%;
+    background: rgba(50, 50, 50, .9);
+    color: #fff;
+    box-sizing: border-box;
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.loginb{
+    width: 25%;
+    max-height: 550px;
+    background: rgba(10, 10, 10, 1);
+    border: 2px white solid;
+    border-radius: 8px;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    box-sizing: border-box;
+    margin: 70px auto 50px;
+    padding:  20px 25px 10px ;
+}
+
+.loginb small{
+    color: #fb2525;
+    margin-bottom: 5px;
+    padding: 20px ;
+    font-family: "Comic Sans MS", serif;
+}
+
+.loginb input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent .2%;
+    outline: inherit;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Comic Sans MS", serif;
+}
+
+
+
+
+.info h1{
+    text-align: center;
+    color: aqua;
+    font-family: "Comic Sans MS", serif;
+    font-size: 35px;
+    font-weight: bolder;
+    text-shadow: 8px 8px black;
+    }
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border: 1px white solid;
+    border-radius: 50%;
+    position: absolute;
+    top: -15%;
+    left: calc(85% - 50%);
+}
+
+
+p{
+    font-family: "Courier New", serif;
+}
+
+.loginb p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.loginb input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.loginb input[type="submit" ]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: chocolate;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-family: "Comic Sans MS", serif;
+}
+
+.loginb input[type="button"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: darkcyan;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-top: 0;
+    cursor: pointer;
+    font-family: "Comic Sans MS", serif;
+}
+
+
+.loginb a{
+    font-family: "Courier New", serif;
+    color: white;
+}
+
+
+#img-div1{
+    top: 50%;
+    float: left;
+    text-shadow: 4px 4px black;
+}
+
+#img-div2{
+    top: 50%;
+    float: right;
+    text-shadow: 4px 4px black;
+}
+
+figcaption{
+    font-family: "Comic Sans MS", serif;
+}
+
+
+/* -------------Animations --------------
+
+
+@-webkit-keyframes mymove {
+    50% {opacity: 0;}
+}
+
+
+@keyframes mymove {
+    50% {background: transparent 0;}
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+    40% {-webkit-transform: translateY(-30px);}
+    60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+    40% {-moz-transform: translateY(-30px);}
+    60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+    40% {-o-transform: translateY(-30px);}
+    60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+} */

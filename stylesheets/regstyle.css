@@ -1,0 +1,65 @@
+/*#regdiv{
+    margin: 0;
+    width: 20%;
+    height: 450px;
+    background-color: darkslategray;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 50px 3%;
+    position: absolute;
+    left: 50%;
+    box-sizing: border-box;
+}
+
+#regdiv input[type="text"], input[type="password"], input[type="number"]{
+    margin:10px 20px;
+    padding-left: 2px;
+}*/
+
+
+#regdiv{
+    width: 360px;
+    font-family: "Comic Sans MS", serif;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 40px 25px ;
+    margin: 70px auto 50px;
+}
+
+input[type="text"], input[type="password"], input[type="tel"]{
+    width: 99%;
+    margin-top: 8px;
+    border: 1px solid black;
+    padding: 10px 10px 10px 5px;
+    font-size: 16px;
+    font-family: "Comic Sans MS", serif;
+}
+
+input[type="number"]{
+
+}
+
+input[type="submit"] button{
+    width: 50%;
+    background-color: aqua;
+    color: black;
+    border: 2px solid black;
+    padding: 10px ;
+    font-family: "Comic Sans MS", serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+h1{
+    font-weight: bold;
+    margin-left: 20%;
+}
+
+
+.profile-pic{
+    border: 2px solid black;
+}
