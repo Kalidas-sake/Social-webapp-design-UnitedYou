@@ -20,7 +20,7 @@ include "loginserv.php";
 <body>
 <div class="main">
 
-    <h1>Welcome to <i class="fab fa-facebook-f"></i>RIENDSBOOK</h1>
+    <h1>Welcome to UnitedYou</h1>
 
     <div class="loginb">
         <img src="img/avatar.jpg" class="avatar">

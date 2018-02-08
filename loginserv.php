@@ -7,7 +7,7 @@ if (isset($_GET['action'])) {
 
 
 if(isset($_SESSION['username'])) {
-    header("location:friendsbook.php");
+    header("location:main.php");
 }
 else{
     if (isset($_POST['submit'])) {
@@ -26,7 +26,7 @@ else{
             $rows = mysqli_num_rows($query);
             if ($rows == 1) {
                 $_SESSION['username'] = $user;
-                header("location:friendsbook.php"); //Redirecting to other page
+                header("location:main.php"); //Redirecting to other page
             } else {
                 $error = "Username or password invalid ";
             }

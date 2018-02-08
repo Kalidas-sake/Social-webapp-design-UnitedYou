@@ -20,7 +20,7 @@ else{
 
 <html>
 <head>
-    <title>Friendsbook Home</title>
+    <title>UnitedYou Home</title>
 </head>
 <body>
     <h2>Site under construction!</h2>
