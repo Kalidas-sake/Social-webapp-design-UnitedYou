@@ -22,7 +22,7 @@ else{
             include("connection.php");
 
             //sql query to fetch information
-            $query = mysqli_query($conn, "SELECT * FROM fbook WHERE user = '$user' AND pass = '$pass'");
+            $query = mysqli_query($conn, "SELECT * FROM userdata WHERE user = '$user' AND pass = '$pass'");
             $rows = mysqli_num_rows($query);
             if ($rows == 1) {
                 $_SESSION['username'] = $user;
