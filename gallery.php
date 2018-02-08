@@ -4,29 +4,30 @@
 </head>
 <body>
     <form action="" method="post" enctype="multipart/form-data">
-        Choose Image Files: <input type="file" name="image">
+        Choose Image Files: <input type="file" name="image[]" multiple>
         <input type="submit" name="upload" value="Show">
     </form>
     <?php
         if(isset($_POST['upload'])){
-            $filename = $_FILES['image']['name'];
-            $filesize = $_FILES['image']['size'];
-            $filetype = $_FILES['image']['type'];
-            $filetmpname = $_FILES['image']['tmp_name'];
 
-            $allowed_type = array("image/jpeg", "image/jpg", "image/png");
-            if(in_array($filetype, $allowed_type)){
-                if(move_uploaded_file($filetmpname, "uploads/$filename")){
+            for($i=0; $i<count($_FILES['image']['name']); $i++) {
+                $filename = $_FILES['image']['name'][$i];
+                $filesize = $_FILES['image']['size'][$i];
+                $filetype = $_FILES['image']['type'][$i];
+                $filetmpname = $_FILES['image']['tmp_name'][$i];
 
-                    ?>
-                    <img src="<?php echo 'uploads/'.$filename?>" width="450px" height="300px" >
-                    <?php
-                }
-                else{
-                    echo "Error in opening file" ;
+                $allowed_type = array("image/jpeg", "image/jpg", "image/png");
+                if (in_array($filetype, $allowed_type)) {
+                    if (move_uploaded_file($filetmpname, "uploads/$filename")) {
+
+                        ?>
+                        <img src="<?php echo 'uploads/' . $filename ?>" width="50%" height="50%" style="float: left">
+                        <?php
+                    } else {
+                        echo "Error in opening file";
+                    }
                 }
             }
-
         }
     ?>
 
