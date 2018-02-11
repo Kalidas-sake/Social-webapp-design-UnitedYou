@@ -1,3 +1,17 @@
+<?php
+session_start();
+if(isset($_SESSION['username'])){
+    echo "<h2>Showing photos of ".$_SESSION['username']."</h2>";
+}
+else{
+    echo "Your session is expired or login first";
+    echo '<br/>click<a href="login.php"> here </a>for login.';
+    exit();
+}
+
+?>
+
+
 <html>
 <head>
     <title>Image Gallery</title>
