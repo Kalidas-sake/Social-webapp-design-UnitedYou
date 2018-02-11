@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Friendsbook Home</title>
+    <title>UnitedYou Home</title>
 </head>
 <body>
 <div>
-    <p>This field is for showing timeline and the updats from all users</p>
+    <p>This field is for showing time-line and the updates from all users</p>
 </div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<h1>FriendsBook</h1>
+<h1>UnitedYou</h1>
 <div>
     <nav>
         <ul>

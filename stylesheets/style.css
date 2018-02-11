@@ -4,6 +4,8 @@
 }
 
 body{
+    background-color: black;
+    color: white;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -24,17 +26,17 @@ body{
 
 .loginb{
     float: right;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 8px;
     padding: 20px;
-    margin-right: 50% ;
     width: 250px;
-    height: 300px;
-    margin-top: 70px;
+    height: auto;
 }
 
 #img-div1, #img-div2{
     margin: 20px;
+    width: 250px;
+    text-align: center;
 }
 
 input[type='text'], input[type='password']{
@@ -46,7 +48,7 @@ input[type="submit"], input[type='button']{
     width: 30%;
     background-color: aqua;
     color: black;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 5px ;
     font-weight: bold;
     font-size: 15px;
@@ -57,16 +59,16 @@ input[type="submit"], input[type='button']{
 }
 
 .avatar{
+    margin: 0;
     width: 100px;
     height: 100px;
     border: 2px solid black;
     border-radius: 50%;
-    position: absolute;
-    top: 10%;
-    left: calc(85% - 50%);
+    position: relative;
+    left: calc(80% - 50%);
 }
 
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-box-shadow: 0 0 0 1000px black inset !important;
 }

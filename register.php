@@ -13,7 +13,7 @@ if($_GET['action'] === 'sign_up') {
             $flag = 1;
         }
         else{
-            $errmsg = 'Enter valid phone number';
+            $flag = 0;
         }
 
 
@@ -21,15 +21,16 @@ if($_GET['action'] === 'sign_up') {
             $errmsg = "Please inter the information";
         } else if ($flag === 1) {
             include("connection.php");
-            $sql = "INSERT INTO fbook VALUES (NULL, '$nuser', '$npass', '$phone')";
+            $sql = "INSERT INTO userdata VALUES (NULL, '$nuser', '$npass', '$phone', null)";
             if ($conn->query($sql) == TRUE) {
                 $errmsg = "success";
             } else {
-                $errmsg = "Phone number or user is already exist";
+                $errmsg = "Query not success";
             }
             $conn->close();
         } else {
-            $errmsg = "Username is already exist";
+            //$errmsg = "Username is already exist";
+            $errmsg = 'Enter valid phone number';
         }
     }
 }
